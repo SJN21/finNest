@@ -51,7 +51,7 @@ export default function DashboardScreen({ navigation }: any) {
         <View style={styles.quickActions}>
           <TouchableOpacity
             style={styles.actionButton}
-            onPress={() => navigation.navigate("AddTransaction")}
+            onPress={() => navigation.navigate("Transactions")}
           >
             <Ionicons
               name="add-circle-outline"
@@ -73,7 +73,7 @@ export default function DashboardScreen({ navigation }: any) {
             <Text style={styles.actionText}>Members</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.actionButton}>
+          <TouchableOpacity style={styles.actionButton} onPress={() => navigation.navigate("Analysis")}>
             <Ionicons
               name="analytics-outline"
               size={22}

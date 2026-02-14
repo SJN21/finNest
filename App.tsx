@@ -8,6 +8,8 @@ import ProfileScreen from "./src/screens/ProfileScreen";
 import DashboardScreen from "./src/screens/DashBoardScreen";
 import AddTransactionScreen from "./src/screens/AddTransactionScreen";
 import MembersScreen from "./src/screens/MembersScreen";
+import TransactionsScreen from "./src/screens/TransactionsScreen";
+import AnalysisScreen from "./src/screens/AnalysisScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -52,8 +54,10 @@ export default function App() {
           })}
         />
         <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Transactions" component={TransactionsScreen} />
         <Stack.Screen name="AddTransaction" component={AddTransactionScreen} />
         <Stack.Screen name="Members" component={MembersScreen} />
+        <Stack.Screen name="Analysis" component={AnalysisScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
